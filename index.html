@@ -1,8 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Jason Portfolio</title>
+
+    <!-- Added superslides -->
+    <link rel="stylesheet" type="text/css" href="css/superslides.css" />
+    <!-- Added owl carousel -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <!-- Added fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <!-- Bootstrap Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Added bootstrap 4.4.1 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Added jquery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Loading -->
+    <div class="loader">
+      <div class="inner"></div>
+    </div>
+
+    <!-- Slides -->
+    <div id="slides">
+      <div class="overlay"></div>
+
+      <div class="slides-container">
+        <img src="img/slide0.jpg" alt="" />
+        <img src="img/slide1.jpg" alt="" />
+        <img src="img/slide2.jpg" alt="" />
+      </div>
+
+      <div class="titleMessage">
+        <div class="heading">
+          <p class="main">Jason Oh</p>
+          <p class="sub typed"></p>
+        </div>
+      </div>
+      <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></a>
+      </nav>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav id="navigation" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Jason Oh</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stats">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About -->
+    <div id="about" class="section aboutSection">
+      <div class="container">
+        <div class="row">
+          <!-- Picture -->
+          <div class="col-md-5">
+            <img class="aboutImage" src="img/me.png" />
+            <div class="name">Jason Oh</div>
+          </div>
+
+          <!-- About me -->
+          <div class="col-md-7">
+            <p>
+              A passionate and initiative third-year student who values
+              responsibilities and enthusiasm.
+            </p>
+            <p>
+              Jason is studying CPA(Computer Programmer Analyst) from Fanshawe
+              College with Dean's honours (4.0 GPA). With his previous major in
+              Architectural Engineering, he always takes proactive approaches
+              and presents an optimized, creative, and efficient solution to
+              complex problems.
+            </p>
+            <p>
+              His aspiration to gain knowledge an experience leads him interests
+              to not only the software development are but also other IT fields
+              such as database management, web development, mobile development,
+              and much more.
+            </p>
+            <p>
+              He enjoys his job, loves the people he works with, and provides
+              warm support to his teammates.
+            </p>
+
+            <div class="sns">
+              <a
+                href="https://www.linkedin.com/in/jason-junyoung-oh-6183b429/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/jasonoh1226?tab=repositories"
+                target="_blank"
+              >
+                <i class="fab fa-git"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="section skillsSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>TECHNICAL SKILLS</h2>
+            <p>A representation of my proficiency in each skill</p>
+          </div>
+          <!-- owl-carousel -->
+          <div class="owl-carousel owl-theme">
+            <div class="skill">
+              <span class="chart" data-percent="67">
+                <span class="percent">80</span>
+                <canvas heigth="152" width="152"></canvas>
+              </span>
+              <h4>C#</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+            <div class="skill">
+              <span class="chart" data-percent="67">
+                <span class="percent">70</span>
+                <canvas heigth="152" width="152"></canvas>
+              </span>
+              <h4>Java</h4>
+              <p>Used in most of my windows app based projects</p>
+            </div>
+            <div class="skill">
+              <span class="chart" data-percent="67">
+                <span class="percent">67</span>
+                <canvas heigth="152" width="152"></canvas>
+              </span>
+              <h4>C++</h4>
+              <p>Used in most of my school projects</p>
+            </div>
+            <div class="skill">
+              <span class="chart" data-percent="67">
+                <span class="percent">80</span>
+                <canvas heigth="152" width="152"></canvas>
+              </span>
+              <h4>.NET Framework</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+            <div class="skill">
+              <span class="chart" data-percent="67">
+                <span class="percent">90</span>
+                <canvas heigth="152" width="152"></canvas>
+              </span>
+              <h4>HTML/CSS</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div id="stats" class="section statsSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter" id="myTargetElement">2</h2>
+                  <h3>Years Experience</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fas fa-window-maximize"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">0</h2>
+                  <h3>Website</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">1</h2>
+                  <h3>Mobile Apps</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">1</h2>
+                  <h3>Games</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="section contactSection">
+      <div class="col-md-12 text-center">
+        <p class="subHeading">I'd love to hear from you!</p>
+        <a href="mailTo:jasonoh1226@gmail.com" class="contactButton"
+          >GET IN TOUCH!</a
+        >
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="section portfolioSection">
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h2>PORTFOLIO</h2>
+          </div>
+
+          <div class="filter">
+            <ul id="filters">
+              <li>
+                <a href="#" data-filter="*" class="current filterButton">ALL</a>
+              </li>
+              <li>
+                <a href="#" data-filter=".websites" class="filterButton"
+                  >Websites</a
+                >
+              </li>
+              <li>
+                <a href="#" data-filter=".mobile" class="filterButton"
+                  >Mobile Apps</a
+                >
+              </li>
+              <li>
+                <a href="#" data-filter=".games" class="filterButton">Games</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="itemsContainer">
+            <ul class="items">
+              <li
+                onClick=""
+                class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <img src="img/portfolio/thumbnails/rocketBoost-square.png" />
+                  <div class="icons">
+                    <a
+                      href="img/portfolio/rocketBoost.png"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is my first project by using Unity"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <!-- _blank opens a new window or a new tap -->
+                    <a
+                      href="https://jasonoh1226.itch.io/rocket-boost"
+                      target="_blank"
+                      class="projectLink"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li
+                onClick=""
+                class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <img src="img/portfolio/thumbnails/rocketBoost-square.png" />
+                  <div class="icons">
+                    <a
+                      href="img/portfolio/rocketBoost.png"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is my first project by using Unity"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <!-- _blank opens a new window or a new tap -->
+                    <a
+                      href="https://jasonoh1226.itch.io/rocket-boost"
+                      target="_blank"
+                      class="projectLink"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onClick="" class="mobile col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="img/portfolio/thumbnails/rocketBoost-square.png" />
+                  <div class="icons">
+                    <a
+                      href="img/portfolio/rocketBoost.png"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is my first project by using Unity"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <!-- _blank opens a new window or a new tap -->
+                    <a
+                      href="https://jasonoh1226.itch.io/rocket-boost"
+                      target="_blank"
+                      class="projectLink"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onClick="" class="mobile col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="img/portfolio/thumbnails/rocketBoost-square.png" />
+                  <div class="icons">
+                    <a
+                      href="img/portfolio/rocketBoost.png"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is my first project by using Unity"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <!-- _blank opens a new window or a new tap -->
+                    <a
+                      href="https://jasonoh1226.itch.io/rocket-boost"
+                      target="_blank"
+                      class="projectLink"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onClick="" class="games col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="img/portfolio/thumbnails/rocketBoost-square.png" />
+                  <div class="icons">
+                    <a
+                      href="img/portfolio/rocketBoost.png"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is my first project by using Unity"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <!-- _blank opens a new window or a new tap -->
+                    <a
+                      href="https://jasonoh1226.itch.io/rocket-boost"
+                      target="_blank"
+                      class="projectLink"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onClick="" class="games col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="img/portfolio/thumbnails/rocketBoost-square.png" />
+                  <div class="icons">
+                    <a
+                      href="img/portfolio/rocketBoost.png"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is my first project by using Unity"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <!-- _blank opens a new window or a new tap -->
+                    <a
+                      href="https://jasonoh1226.itch.io/rocket-boost"
+                      target="_blank"
+                      class="projectLink"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience" class="section experienceSection">
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h2>EXPERIENCE</h2>
+          </div>
+
+          <div class="item">
+            <div class="title">IT DEVELOPER (Co-op)</div>
+            <div class="company">Nova Chemicals, Sarnia, ON, Canada</div>
+            <div class="content">
+              <ul>
+                <li>
+                  Migrated database successfully from Oracle to SQL server
+                </li>
+                <li>
+                  Identified issue with .NET code and adjusted accordingly for
+                  existing web applications to work with the new SQL database
+                </li>
+                <li>
+                  Implemented, tested a new plant template and created SQL
+                  script to insert data to the database
+                </li>
+                <li>
+                  Interacted with co-workers, explained a situation and
+                  demonstrated a solution efficiently
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyrightSection">
+      <div class="col-md-12 text-center">
+        <p>&copy; Copyright 2020 Jason Oh, All rights reserved.</p>
+      </div>
+    </div>
+
+    <!-- Added 'count up' jquery -->
+    <script src="js/countUp.min.js" type="module"></script>
+    <!-- <script src="js/countUp.js"></script>
+    <script src="js/countUp-jquery.js"></script> -->
+    <!-- Added 'easy-pie-chart' jquery -->
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <!-- Added 'typed' java script -->
+    <script src="js/typed.min.js"></script>
+    <!-- Added 'superslides' jquery -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <!-- Added 'owl carousel' jquery -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Added 'popper' -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Added 'bootstrap' -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" type="module"></script>
+
+    <!-- Added 'isotope' -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"
+    ></script>
+    <!-- Added 'fancybox' -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </body>
 </html>
-å
